@@ -36,7 +36,7 @@ class GameModel(Model):
         if self.player1_wins < 3 and self.player2_wins < 3:
             print(f"Rodada: {self.round}")
             self.round += 1
-            print(f"{player1.name}, {player1.move}\t{player2.name}, {player2.move}")
+            print(f"{player1.name} jogou {player1.move}!\t{player2.name} jogou {player2.move}!")
             if player1.move == player2.move:
                 print("Empate!")
                 player1.previous_result = "empate"
@@ -68,7 +68,9 @@ class GameModel(Model):
             self.isRunning = False
             if self.player1_wins - self.player2_wins > 0:
                 print(f"{player1.name} ganhou a partida!")
+                self.winner = player1.name
             else:
                 print(f"{player2.name} ganhou a partida!")
+                self.winner = player2.name
         print()
         # sleep(2)
