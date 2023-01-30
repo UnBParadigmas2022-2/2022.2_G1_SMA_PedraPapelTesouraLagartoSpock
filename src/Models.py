@@ -16,6 +16,9 @@ class GameModel(Model):
             "Papelao": Papelao,
             "Randao": Randao,
             "Bomsao": Bomsao,
+            "Arnaldo": Arnaldo,
+            "Ruanzão": Ruanzão,
+
         }
         self.player1_wins = 0
         self.player2_wins = 0

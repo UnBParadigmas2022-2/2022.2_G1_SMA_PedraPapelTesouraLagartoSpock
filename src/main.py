@@ -1,7 +1,7 @@
 from Models import *
 from os import system, name
 
-listDisp = [0, 0, 0, 0]
+listDisp = [0, 0, 0, 0, 0, 0]
 partida1 = []
 partida2 = []
 
@@ -12,13 +12,13 @@ def clearScreen():
         system("clear")
 
 def showPlayers():
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao"]
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão"]
     for p in range(len(list)):
         if listDisp[p] == 0:
             print(str(p+1)+". "+list[p])
 
 def checkChoice(choice, partida):
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao"]
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão"] 
     if choice == 1 and listDisp[0] == 0:
         partida.append("Pedrao")
         listDisp[0] = 1
@@ -31,7 +31,13 @@ def checkChoice(choice, partida):
     elif choice == 4 and listDisp[3] == 0:
         partida.append("Randao")
         listDisp[3] = 1
-    elif choice == 5:
+    elif choice == 5 and listDisp[4] == 0:
+        partida.append("Arnaldo")
+        listDisp[4] = 1
+    elif choice == 6 and listDisp[5] == 0:
+        partida.append("Arnaldo")
+        listDisp[5] = 1
+    elif choice == 7:
         for i in range(len(listDisp)):
             if listDisp[i] == 0:
                 partida.append(list[i])
@@ -77,14 +83,14 @@ def menu():
 
 
         elif fim == 1 and players == 1:
-            print("JOGADOR RESTANTE FOI ADICIONADO A PARTIDA 2")
-            checkChoice(5, partida2)
-            fim+=1
-            players = 0
+            print("ESCOLHA O ULTIMO PARTICIPANTE DA PARTIDA 2:")
+            showPlayers()
+            choice = input()
+            if checkChoice(int(choice), partida2) != 1:
+                print("JOGADOR ADICIONADO A PARTIDA 2")
+                fim+=1
         
         sleep(1)
-
-
 
 def main():
     clearScreen()
