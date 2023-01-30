@@ -1,5 +1,5 @@
 run:
-	@python3 src/main.py
+	docker run -it sma
 
 build:
-	pip install -r requirements.txt
+	docker build -t sma .
