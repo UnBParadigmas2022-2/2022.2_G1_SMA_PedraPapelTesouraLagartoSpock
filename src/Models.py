@@ -2,6 +2,8 @@ from mesa import Model
 from Agents import *
 from mesa.time import RandomActivation
 from time import sleep
+import pyfiglet
+from main import clearScreen
 
 
 class GameModel(Model):
@@ -70,10 +72,14 @@ class GameModel(Model):
         else:
             self.isRunning = False
             if self.player1_wins - self.player2_wins > 0:
-                print(f"{player1.name} ganhou a partida!")
+                print(pyfiglet.figlet_format(f"{player1.name} ganhou"))
                 self.winner = player1.name
+                input("Prosseguir para próxima partida? Pressione Enter")
+                clearScreen()
             else:
-                print(f"{player2.name} ganhou a partida!")
+                print(pyfiglet.figlet_format(f"{player2.name} ganhou"))
                 self.winner = player2.name
+                input("Prosseguir para próxima partida? Pressione Enter")
+                clearScreen()
         print()
         # sleep(2)

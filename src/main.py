@@ -1,5 +1,6 @@
 from Models import *
 from os import system, name
+import pyfiglet
 
 listDisp = [0, 0, 0, 0, 0, 0]
 partida1 = []
@@ -54,8 +55,8 @@ def menu():
     
     while fim < 2:
         clearScreen()
-        print("||||||||||||||||||||||||||||||||||||||||||||||||")
-        print("BEM VINDO AO TORNEIO DE PEDRA PAPEL TESOURA LAGARTO SPOCK (NÃO TINHA UM NOME MENOR)")
+        print("BEM VINDO AO TORNEIO DE")
+        print(pyfiglet.figlet_format("PEDRA PAPEL TESOURA LAGARTO SPOCK", justify='center'))
         if fim == 0 and players == 0:
             print("ESCOLHA O PRIMEIRO PARTICIPANTE DA PARTIDA 1:")
             showPlayers()
@@ -108,7 +109,7 @@ def main():
     while Match2.isRunning:
         Match2.step()
     print("||||||||||||||||||||||||||||||||||||||||||||||||")
-    print("PARTIDA FINAL:")
+    print(pyfiglet.figlet_format("PARTIDA FINAL"))
     print(Match1.winner, Match2.winner)
     Final = GameModel(str(Match1.winner), str(Match2.winner))
     while Final.isRunning:

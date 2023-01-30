@@ -1,5 +1,6 @@
 from mesa import Agent
 from random import choice
+import pyfiglet
 
 
 class Randao(Agent):
