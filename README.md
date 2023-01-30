@@ -93,7 +93,7 @@ TEMPO: +/- 15min
 | ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
 | Álvaro Gouveia -18/0012002		                                   | Auxílio Criação dos Agentes Iniciais / Sistema de Chaveamento | Excelente | 
 | Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
-| Davi Matheus da Rocha de Oliveira - 19/0042419	         |   -  | Excelente                                                                            |
+| Davi Matheus da Rocha de Oliveira - 19/0042419	         |   Criação dos Agentes Finais / Melhorias na Interface  | Excelente                                                                            |
 | Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
 |Guilherme Rogelin Vial	- 19/0014032	    |    |   |
 | Liverson Furtado Severo	- 18/0022237    | - | Excelente                                                                         |
