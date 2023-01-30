@@ -18,8 +18,8 @@ def showPlayers():
             print(str(p+1)+". "+list[p])
 
 def checkChoice(choice, partida):
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao"]
     if choice == 1 and listDisp[0] == 0:
-        print("PEDRAO")
         partida.append("Pedrao")
         listDisp[0] = 1
     elif choice == 2 and listDisp[1] == 0:
@@ -31,9 +31,15 @@ def checkChoice(choice, partida):
     elif choice == 4 and listDisp[3] == 0:
         partida.append("Randao")
         listDisp[3] = 1
+    elif choice == 5:
+        for i in range(len(listDisp)):
+            if listDisp[i] == 0:
+                partida.append(list[i])
+                listDisp[i] = 1
+                return 0
     else:
         return 1
-        
+
     return 0
 
 def menu():
@@ -65,13 +71,14 @@ def menu():
             print("ESCOLHA O PRIMEIRO PARTICIPANTE DA PARTIDA 2:")
             showPlayers()
             choice = input()
-            if checkChoice(int(choice), partida1) != 1:
+            if checkChoice(int(choice), partida2) != 1:
                 print("JOGADOR ADICIONADO A PARTIDA 2")
                 players += 1
 
 
         elif fim == 1 and players == 1:
             print("JOGADOR RESTANTE FOI ADICIONADO A PARTIDA 2")
+            checkChoice(5, partida2)
             fim+=1
             players = 0
         
@@ -82,22 +89,24 @@ def menu():
 def main():
     clearScreen()
     menu()
-    # print("||||||||||||||||||||||||||||||||||||||||||||||||")
-    # print("PARTIDA 1:")
-    # Match1 = GameModel("Pedrao", "Bomsao")
-    # while Match1.isRunning:
-    #     Match1.step()
+    clearScreen()
+    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("PARTIDA 1:")
+    Match1 = GameModel(partida1[0], partida1[1])
+    while Match1.isRunning:
+        Match1.step()
 
-    # print("||||||||||||||||||||||||||||||||||||||||||||||||")
-    # print("PARTIDA 2:")
-    # Match2 = GameModel("Papelao", "Randao")
-    # while Match2.isRunning:
-    #     Match2.step()
-    # print("||||||||||||||||||||||||||||||||||||||||||||||||")
-    # print("PARTIDA FINAL:")
-    # Final = GameModel(str(Match1.winner), str(Match2.winner))
-    # while Final.isRunning:
-    #     Final.step()
+    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("PARTIDA 2:")
+    Match2 = GameModel(partida2[0], partida2[1])
+    while Match2.isRunning:
+        Match2.step()
+    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("PARTIDA FINAL:")
+    print(Match1.winner, Match2.winner)
+    Final = GameModel(str(Match1.winner), str(Match2.winner))
+    while Final.isRunning:
+        Final.step()
 
     
 
