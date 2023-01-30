@@ -97,18 +97,18 @@ def main():
     clearScreen()
     menu()
     clearScreen()
-    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("_______________________________________________________")
     print("PARTIDA 1:")
     Match1 = GameModel(partida1[0], partida1[1])
     while Match1.isRunning:
         Match1.step()
 
-    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("_______________________________________________________")
     print("PARTIDA 2:")
     Match2 = GameModel(partida2[0], partida2[1])
     while Match2.isRunning:
         Match2.step()
-    print("||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("_______________________________________________________")
     print(pyfiglet.figlet_format("PARTIDA FINAL"))
     print(Match1.winner, Match2.winner)
     Final = GameModel(str(Match1.winner), str(Match2.winner))

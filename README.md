@@ -1,51 +1,81 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-
-**!! *Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(Paradigma)_(NomeDoProjeto)*. !!** 
-
-Paradigmas:
- - Funcional
- - Logico
- - SMA
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2022.2_G1_Logico_ProjetoRoteirosAereos*. !!**
- 
- (Apague esses comentários)
-
-# NomeDoProjeto
+# Pedra Papel Tesoura Lagarto Spock
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
-**Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: XX<br>
-**Paradigma**: XXXXXXXXXX<br>
+**Nro do Grupo**: G1<br>
+**Paradigma**: SMA<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0012002 |  Álvaro Gouveia |
+| 19/0044799 |  Antônio Ferreira de Castro Neto |
+| 19/0042419 |  Davi Matheus da Rocha de Oliveira |
+| 17/0142329 |  Francisco Emanoel Ferreira |
+| 19/0014032 |  Guilherme Rogelin Vial |
+| 18/0022237 |  Liverson Furtado Severo |
+| 14/0155350 |  Matheus Filipe Faria Alves de Andrade |
+| 19/0058650 |  Natanael Fernandes Coelho Filho |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
-Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
+O jogo Pedra, Papel, Tesoura, Lagarto, Spock! é uma aplicação de Sistemas Multiagentes no qual é simulado um torneio de Pedra, Papel e Tesoura num estilo diferente.
+
+Existem 6 tipos de Agentes (players), com um Model e a Simulação que consiste nas partidas 1 e 2, e depois a grande final. Dentre os 6 jogadores, o usuário escolhe 4 para preencher as partidas 1 e 2, cada jogador com um modelo de jogo diferente:
+
+- Pedrão: apenas joga pedra.
+- Papelão: apenas joga papel.
+- Randão: joga de forma randômica.
+- Bomsão: se adapta de acordo com as partidas anteriores.
+- Arnaldo: tem maiores chances de vencer apenas 1 partida.
+- Ruanzão: tem maiores chances de perder todas as partidas.
+
+
+O jogo em questão foi inspirado na série The Big Bang Theory: o contexto pode ser compreendido com esse [vídeo](https://youtu.be/7QiiFEbGYnQ?t=86)
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+## Menu Inicial
+![image1](imgs/1.png)
+
+## Primeira partida
+![image2](imgs/2.png)
+
+## Partida final e o vencedor
+![image3](imgs/3.png)
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
+**Linguagens**: Python<br>
+**Tecnologias**: Mesa<br>
+Utilizamos um Makefile para auxiliar na execução da aplicação.
+
+Para instalar as dependências:
+
+```make build```
+
+Para rodar a aplicação:
+
+```make run```
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+
+As regras do jogo vão um pouco além do Pedra, Papel, Tesoura convecional:
+
+```
+- Tesoura corta papel
+- Papel cobre pedra
+- Pedra esmaga lagarto
+- Lagarto envenena Spock
+- Spock esmaga (ou derrete) tesoura
+- Tesoura decapita lagarto
+- Lagarto come papel
+- Papel refuta Spock
+- Spock vaporiza pedra
+- Pedra amassa tesoura
+```
+
+1 - Escolha 4 dos 6 jogadores para jogar a primeira e segunda partida.
+
+2 - Veja as rodadas e vencedor da primeira e segunda partida.
+
+3 - Veja as rodadas e vencedor da partida final e o vencedor.
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -58,10 +88,17 @@ OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
 TEMPO: +/- 15min
 
 ## Participações
-Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
-|Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
-| -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa |
+## Participações
+| Nome do Membro                           | Contribuição                                         | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
+| ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Álvaro Gouveia -18/0012002		                                   | - | Excelente | 
+| Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
+| Davi Matheus da Rocha de Oliveira - 19/0042419	         |   -  | Excelente                                                                            |
+| Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
+|Guilherme Rogelin Vial	- 19/0014032	    |    |   |
+| Liverson Furtado Severo	- 18/0022237    | - | Excelente                                                                         |
+| Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |     |     |
+| Natanael Fernandes Coelho Filho	- 19/0058650	                 |     |            |
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
@@ -71,5 +108,6 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 (iV) Trabalhos Futuros.
 
 ## Fontes
-Referencie, adequadamente, as referências utilizadas.
-Indique ainda sobre fontes de leitura complementares.
+- [Regras do jogo](https://pt.wikipedia.org/wiki/Pedra-papel-tesoura-lagarto-Spock)
+
+- [Mesa](https://mesa.readthedocs.io/en/stable/)
