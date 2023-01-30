@@ -7,7 +7,7 @@
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| 18/0012002 |  Álvaro Gouveia |
+| 18/0012002 |  Álvaro Gouvea |
 | 19/0044799 |  Antônio Ferreira de Castro Neto |
 | 19/0042419 |  Davi Matheus da Rocha de Oliveira |
 | 17/0142329 |  Francisco Emanoel Ferreira |
@@ -91,7 +91,7 @@ TEMPO: +/- 15min
 ## Participações
 | Nome do Membro                           | Contribuição                                         | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Álvaro Gouveia -18/0012002		                                   | - | Excelente | 
+| Álvaro Gouveia -18/0012002		                                   | Auxílio Criação dos Agentes Iniciais / Sistema de Chaveamento | Excelente | 
 | Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
 | Davi Matheus da Rocha de Oliveira - 19/0042419	         |   -  | Excelente                                                                            |
 | Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
