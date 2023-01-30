@@ -44,13 +44,14 @@ O jogo em questão foi inspirado na série The Big Bang Theory: o contexto pode 
 ## Instalação 
 **Linguagens**: Python<br>
 **Tecnologias**: Mesa<br>
-Utilizamos um Makefile para auxiliar na execução da aplicação.
+Criamos ambientes containizados com o [docker](https://docs.docker.com/engine/install/ubuntu/) para rodar a aplicação com o auxilio do [Makefile](https://linuxhint.com/install-make-ubuntu/) para auxiliar na execução da aplicação.
 
-Para instalar as dependências:
+
+Para criar a imagem docker e instalar as dependências:
 
 ```make build```
 
-Para rodar a aplicação:
+Para rodar a aplicação docker:
 
 ```make run```
 
@@ -94,7 +95,7 @@ TEMPO: +/- 15min
 | Álvaro Gouveia -18/0012002		                                   | - | Excelente | 
 | Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
 | Davi Matheus da Rocha de Oliveira - 19/0042419	         |   -  | Excelente                                                                            |
-| Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
+| Francisco Emanoel Ferreira   - 17/0142329	              | Criar ambiente containizado e melhorar o readme   | Excelente  |
 |Guilherme Rogelin Vial	- 19/0014032	    |    |   |
 | Liverson Furtado Severo	- 18/0022237    | - | Excelente                                                                         |
 | Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |     |     |
