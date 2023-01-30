@@ -16,6 +16,7 @@ class GameModel(Model):
         self.possible_players = {
             "Pedrao": Pedrao,
             "Papelao": Papelao,
+            "Tesourao": Tesourao,
             "Randao": Randao,
             "Bomsao": Bomsao,
             "Arnaldo": Arnaldo,
@@ -47,16 +48,16 @@ class GameModel(Model):
                 player1.previous_result = "empate"
                 player2.previous_result = "empate"
             elif (
-                (player1.move == "pedra" and player2.move == "tesoura")
-                or (player1.move == "pedra" and player2.move == "lagarto")
-                or (player1.move == "papel" and player2.move == "pedra")
-                or (player1.move == "papel" and player2.move == "spock")
-                or (player1.move == "tesoura" and player2.move == "papel")
-                or (player1.move == "tesoura" and player2.move == "lagarto")
-                or (player1.move == "spock" and player2.move == "tesoura")
-                or (player1.move == "spock" and player2.move == "pedra")
-                or (player1.move == "lagarto" and player2.move == "papel")
-                or (player1.move == "lagarto" and player2.move == "spock")
+                (player1.move.split()[0] == "pedra" and player2.move.split()[0] == "tesoura")
+                or (player1.move.split()[0] == "pedra" and player2.move.split()[0] == "lagarto")
+                or (player1.move.split()[0] == "papel" and player2.move.split()[0] == "pedra")
+                or (player1.move.split()[0] == "papel" and player2.move.split()[0] == "spock")
+                or (player1.move.split()[0] == "tesoura" and player2.move.split()[0] == "papel")
+                or (player1.move.split()[0] == "tesoura" and player2.move.split()[0] == "lagarto")
+                or (player1.move.split()[0] == "spock" and player2.move.split()[0] == "tesoura")
+                or (player1.move.split()[0] == "spock" and player2.move.split()[0] == "pedra")
+                or (player1.move.split()[0] == "lagarto" and player2.move.split()[0] == "papel")
+                or (player1.move.split()[0] == "lagarto" and player2.move.split()[0] == "spock")
             ):
                 print(f"{player1.name} ganhou!")
                 player1.previous_result = "ganhou"

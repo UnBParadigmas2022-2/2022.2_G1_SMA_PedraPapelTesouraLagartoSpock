@@ -45,6 +45,18 @@ class Papelao(Agent):
         self.move = emojize("papel :roll_of_paper:")
 
 
+class Tesourao(Agent):
+    def __init__(self, unique_id, model):
+        super().__init__(unique_id, model)
+        self.move = None
+        self.name = "Tesourao"
+        self.previous_result = None
+        # self.status = True
+
+    def step(self):
+        self.move = emojize("tesoura :scissors:")
+
+
 class Arnaldo(Agent):
     def __init__(self, unique_id, model):
         super().__init__(unique_id, model)

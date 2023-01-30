@@ -2,7 +2,7 @@ from Models import *
 from os import system, name
 import pyfiglet
 
-listDisp = [0, 0, 0, 0, 0, 0]
+listDisp = [0, 0, 0, 0, 0, 0, 0]
 partida1 = []
 partida2 = []
 
@@ -13,13 +13,13 @@ def clearScreen():
         system("clear")
 
 def showPlayers():
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão"]
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao"]
     for p in range(len(list)):
         if listDisp[p] == 0:
             print(str(p+1)+". "+list[p])
 
 def checkChoice(choice, partida):
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão"] 
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao"] 
     if choice == 1 and listDisp[0] == 0:
         partida.append("Pedrao")
         listDisp[0] = 1
@@ -36,9 +36,12 @@ def checkChoice(choice, partida):
         partida.append("Arnaldo")
         listDisp[4] = 1
     elif choice == 6 and listDisp[5] == 0:
-        partida.append("Arnaldo")
+        partida.append("Ruanzão")
         listDisp[5] = 1
-    elif choice == 7:
+    elif choice == 7 and listDisp[6] == 0:
+        partida.append("Tesourao")
+        listDisp[6] = 1
+    elif choice == 8:
         for i in range(len(listDisp)):
             if listDisp[i] == 0:
                 partida.append(list[i])
