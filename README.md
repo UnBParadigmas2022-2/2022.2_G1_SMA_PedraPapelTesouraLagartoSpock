@@ -95,8 +95,8 @@ TEMPO: +/- 15min
 | Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
 | Davi Matheus da Rocha de Oliveira - 19/0042419	         |   Criação dos Agentes Finais / Melhorias na Interface  | Excelente                                                                            |
 | Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
-|Guilherme Rogelin Vial	- 19/0014032	    |    |   |
-| Liverson Furtado Severo	- 18/0022237    | - | Excelente                                                                         |
+|Guilherme Rogelin Vial	- 19/0014032	    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente |
+| Liverson Furtado Severo	- 18/0022237    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente                                                                         |
 | Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |  Auxílio criação dos agentes / Correção bugs   |  Excelente   |
 | Natanael Fernandes Coelho Filho	- 19/0058650	                 |     |            |
 
