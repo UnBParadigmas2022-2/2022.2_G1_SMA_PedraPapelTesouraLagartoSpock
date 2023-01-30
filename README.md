@@ -97,7 +97,7 @@ TEMPO: +/- 15min
 | Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
 |Guilherme Rogelin Vial	- 19/0014032	    |    |   |
 | Liverson Furtado Severo	- 18/0022237    | - | Excelente                                                                         |
-| Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |     |     |
+| Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |  Auxílio criação dos agentes / Correção bugs   |  Excelente   |
 | Natanael Fernandes Coelho Filho	- 19/0058650	                 |     |            |
 
 ## Outros 
