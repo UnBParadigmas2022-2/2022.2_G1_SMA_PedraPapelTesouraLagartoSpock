@@ -1,6 +1,7 @@
 from mesa import Agent
 from random import choice
 import pyfiglet
+from emoji import emojize
 
 
 class Randao(Agent):
@@ -12,7 +13,12 @@ class Randao(Agent):
         # self.status = True
 
     def step(self):
-        self.move = choice(["pedra", "papel", "tesoura", "lagarto", "spock"])
+        self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
+    
 
 
 class Pedrao(Agent):
@@ -24,7 +30,7 @@ class Pedrao(Agent):
         # self.status = True
 
     def step(self):
-        self.move = "pedra"
+        self.move = emojize("pedra :rock:")
 
 
 class Papelao(Agent):
@@ -36,7 +42,7 @@ class Papelao(Agent):
         # self.status = True
 
     def step(self):
-        self.move = "papel"
+        self.move = emojize("papel :roll_of_paper:")
 
 
 class Arnaldo(Agent):
@@ -68,10 +74,18 @@ class Arnaldo(Agent):
                 },
             }        
         else:
-            self.move = choice(["pedra", "papel", "tesoura", "lagarto", "spock"])
+            self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
     def step(self):
         if not self.previous_move or self.previous_result == "empate":
-            self.move = choice(["pedra", "papel", "tesoura", "lagarto", "spock"])
+            self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
         else:
             self.move = choice(self.moves[self.previous_result[self.previous_move]])
             
@@ -102,7 +116,11 @@ class Ruanzão(Agent):
         }
     def step(self):
         if not self.previous_move or self.previous_result == "empate":
-            self.move = choice(["pedra", "papel", "tesoura", "lagarto", "spock"])
+            self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
         else:
             self.move = choice(self.moves[self.previous_result[self.previous_move]])
             
@@ -133,6 +151,10 @@ class Bomsao(Agent):
 
     def step(self):
         if not self.previous_move or self.previous_result == "empate":
-            self.move = choice(["pedra", "papel", "tesoura", "lagarto", "spock"])
+            self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
         else:
             self.move = choice(self.moves[self.previous_result[self.previous_move]])
