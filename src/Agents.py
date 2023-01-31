@@ -204,11 +204,16 @@ class Empatao(Agent):
         }
 
     def step(self):
-        if not self.previous_move or self.previous_result == "perdeu" or self.previous_result == "ganhou":
+        if not self.previous_move:
             self.move = choice([emojize("pedra :rock:"), 
                             emojize("papel :roll_of_paper:"), 
                             emojize("tesoura :scissors:"), 
                             emojize("lagarto :lizard:"), 
                             emojize("spock :alien:")])
         else:
-            self.move = choice(self.moves[self.previous_result[self.previous_move]])
+            if self.previous_result == "perdeu":
+                self.move = self.moves["perdeu"][self.previous_move][0]
+            elif self.previous_result == "ganhou":
+                self.move = self.moves["ganhou"][self.previous_move][0]
+            else:
+                self.move = choice(self.moves[self.previous_result[self.previous_move]])
