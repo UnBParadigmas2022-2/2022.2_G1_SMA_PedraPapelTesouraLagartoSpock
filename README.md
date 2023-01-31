@@ -78,8 +78,9 @@ Para rodar a aplicação:
 ```make run```
 
 ## Vídeo
-o vídeo de apresentação pode ser visitado por esse [link](https://youtu.be/xEa0UJh7P_E)
-E um vídeo de demonstração da pipeline nesse [link](https://youtu.be/xAI52gHAf6s)
+o vídeo de apresentação pode ser visitado por esse [link](https://youtu.be/xEa0UJh7P_E), e um vídeo de demonstração da pipeline nesse [link](https://youtu.be/xAI52gHAf6s)
+
+Caso não consiga acessar pelo Youtube, acesse o vídeo pelo [Drive](https://drive.google.com/drive/folders/1eSrF4gNFM-6M7MdbT_Sw4aJE51wRIi86?usp=sharing)
 
 ## Participações
 ## Participações
