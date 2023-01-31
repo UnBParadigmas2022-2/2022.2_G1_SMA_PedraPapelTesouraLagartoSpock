@@ -101,11 +101,19 @@ TEMPO: +/- 15min
 | Natanael Fernandes Coelho Filho	- 19/0058650	                 |     |            |
 
 ## Outros 
-Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+* Lições Aprendidas:
+   * Entendendo os alguns conceitos do Sistemas Multiagentes
+   * Entendendo os princípios da sintaxe e semântica do framework MESA com a linguagem Python
+ 
+* Percepções:
+   * Por estarmos acostumados com a linguagem Python, nos adaptamos bem ao framework MESA, no entanto não conseguimos utilizar a interface gráfica do framework por falta de tempo. Mas ainda sim conseguimos entender como funciona o Sistema Multiagentes.
+ 
+* Contribuições e Fragilidades
+   * Uma fragilidade seria tempo escasso devido a trabalhos de outras matérias e euforia do fim do semestre.
+  
+* Trabalhos Futuros.
+   * Adição de mais agentes
+   * Possibilidade do usuário jogar contra com os Agentes
 
 ## Fontes
 - [Regras do jogo](https://pt.wikipedia.org/wiki/Pedra-papel-tesoura-lagarto-Spock)
