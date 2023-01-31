@@ -2,7 +2,7 @@ from Models import *
 from os import system, name
 import pyfiglet
 
-listDisp = [0, 0, 0, 0, 0, 0, 0]
+listDisp = [0, 0, 0, 0, 0, 0, 0, 0]
 partida1 = []
 partida2 = []
 
@@ -13,13 +13,14 @@ def clearScreen():
         system("clear")
 
 def showPlayers():
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao"]
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao", "Empatao"]
+
     for p in range(len(list)):
         if listDisp[p] == 0:
             print(str(p+1)+". "+list[p])
 
 def checkChoice(choice, partida):
-    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao"] 
+    list = ["Pedrao", "Papelao", "Bomsao", "Randao", "Arnaldo", "Ruanzão", "Tesourao", "Empatao"] 
     if choice == 1 and listDisp[0] == 0:
         partida.append("Pedrao")
         listDisp[0] = 1
@@ -41,7 +42,10 @@ def checkChoice(choice, partida):
     elif choice == 7 and listDisp[6] == 0:
         partida.append("Tesourao")
         listDisp[6] = 1
-    elif choice == 8:
+    elif choice == 8 and listDisp[7] == 0:
+        partida.append("Empatao")
+        listDisp[7] = 1
+    elif choice == 9:
         for i in range(len(listDisp)):
             if listDisp[i] == 0:
                 partida.append(list[i])
@@ -74,9 +78,7 @@ def menu():
             if checkChoice(int(choice), partida1) != 1:
                 print("JOGADOR ADICIONADO A PARTIDA 1")
                 fim+=1
-                players = 0
-
-
+                players = 0        
         elif fim == 1 and players == 0:
             print("ESCOLHA O PRIMEIRO PARTICIPANTE DA PARTIDA 2:")
             showPlayers()
@@ -93,6 +95,8 @@ def menu():
             if checkChoice(int(choice), partida2) != 1:
                 print("JOGADOR ADICIONADO A PARTIDA 2")
                 fim+=1
+        print("p1 ", partida1)
+        print("p2 ", partida2)
         
         sleep(1)
 
@@ -102,12 +106,15 @@ def main():
     clearScreen()
     print("_______________________________________________________")
     print("PARTIDA 1:")
+    print(partida1)
     Match1 = GameModel(partida1[0], partida1[1])
     while Match1.isRunning:
         Match1.step()
 
     print("_______________________________________________________")
     print("PARTIDA 2:")
+    print(partida2)
+    
     Match2 = GameModel(partida2[0], partida2[1])
     while Match2.isRunning:
         Match2.step()

@@ -170,3 +170,45 @@ class Bomsao(Agent):
                             emojize("spock :alien:")])
         else:
             self.move = choice(self.moves[self.previous_result[self.previous_move]])
+
+class Empatao(Agent):
+    def __init__(self, unique_id, model):
+        super().__init__(unique_id, model)
+        self.previous_move = ""
+        self.previous_result = None
+        self.move = None
+        self.name = "Empatao"
+        # self.status = True
+        self.moves = {
+            "ganhou": {
+                "pedra": ["lagarto", "tesoura"],
+                "papel": ["pedra", "spock"],
+                "tesoura": ["papel", "lagarto"],
+                "lagarto": ["spock", "papel"],
+                "spock": ["tesoura", "pedra"],
+            },
+            "perdeu": {
+                "pedra": ["papel", "spock"],
+                "papel": ["tesoura", "lagarto"],
+                "tesoura": ["spock", "pedra"],
+                "lagarto": ["pedra", "tesoura"],
+                "spock": ["lagarto", "papel"],
+            }, 
+            "empate": {
+                "pedra": ["pedra"],
+                "papel": ["papel"],
+                "tesoura": ["tesoura"],
+                "lagarto": ["lagarto"],
+                "spock": ["spock"],
+            }
+        }
+
+    def step(self):
+        if not self.previous_move or self.previous_result == "perdeu" or self.previous_result == "ganhou":
+            self.move = choice([emojize("pedra :rock:"), 
+                            emojize("papel :roll_of_paper:"), 
+                            emojize("tesoura :scissors:"), 
+                            emojize("lagarto :lizard:"), 
+                            emojize("spock :alien:")])
+        else:
+            self.move = choice(self.moves[self.previous_result[self.previous_move]])
