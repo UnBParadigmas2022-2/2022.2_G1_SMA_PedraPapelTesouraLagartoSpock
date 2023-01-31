@@ -92,9 +92,9 @@ TEMPO: +/- 15min
 | Nome do Membro                           | Contribuição                                         | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
 | Álvaro Gouveia -18/0012002		                                   | Auxílio Criação dos Agentes Iniciais / Sistema de Chaveamento | Excelente | 
-| Antônio Ferreira de Castro Neto - 19/0044799|  - | Excelente                                                                            |
+| Antônio Ferreira de Castro Neto - 19/0044799| Criação de novos Agentes. Melhorias de usabilidade e visual da interface. Criação do README | Excelente |
 | Davi Matheus da Rocha de Oliveira - 19/0042419	         |   Criação dos Agentes Finais / Melhorias na Interface  | Excelente                                                                            |
-| Francisco Emanoel Ferreira   - 17/0142329	              |    |  |
+| Francisco Emanoel Ferreira   - 17/0142329	              |  Criação da pipeline e dockerização  | Muito Boa |
 |Guilherme Rogelin Vial	- 19/0014032	    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente |
 | Liverson Furtado Severo	- 18/0022237    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente                                                                         |
 | Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |  Auxílio criação dos agentes / Correção bugs   |  Excelente   |
