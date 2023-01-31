@@ -31,29 +31,6 @@ Existem 6 tipos de Agentes (players), com um Model e a Simulação que consiste 
 
 O jogo em questão foi inspirado na série The Big Bang Theory: o contexto pode ser compreendido com esse [vídeo](https://youtu.be/7QiiFEbGYnQ?t=86)
 
-## Screenshots
-## Menu Inicial
-![image1](imgs/1.png)
-
-## Primeira partida
-![image2](imgs/2.png)
-
-## Partida final e o vencedor
-![image3](imgs/3.png)
-
-## Instalação 
-**Linguagens**: Python<br>
-**Tecnologias**: Mesa<br>
-Utilizamos um Makefile para auxiliar na execução da aplicação.
-
-Para instalar as dependências:
-
-```make build```
-
-Para rodar a aplicação:
-
-```make run```
-
 ## Uso 
 
 As regras do jogo vão um pouco além do Pedra, Papel, Tesoura convecional:
@@ -76,6 +53,29 @@ As regras do jogo vão um pouco além do Pedra, Papel, Tesoura convecional:
 2 - Veja as rodadas e vencedor da primeira e segunda partida.
 
 3 - Veja as rodadas e vencedor da partida final e o vencedor.
+
+## Screenshots
+## Menu Inicial
+![image1](imgs/1.png)
+
+## Primeira partida
+![image2](imgs/2.png)
+
+## Partida final e o vencedor
+![image3](imgs/3.png)
+
+## Instalação 
+**Linguagens**: Python<br>
+**Tecnologias**: Mesa<br>
+Utilizamos um Makefile para auxiliar na execução da aplicação.
+
+Para instalar as dependências:
+
+```make build```
+
+Para rodar a aplicação:
+
+```make run```
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
