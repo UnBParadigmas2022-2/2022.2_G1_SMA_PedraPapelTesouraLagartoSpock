@@ -98,7 +98,7 @@ TEMPO: +/- 15min
 |Guilherme Rogelin Vial	- 19/0014032	    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente |
 | Liverson Furtado Severo	- 18/0022237    | Criação dos agentes e do modelo responsável pela lógica do jogo. | Excelente                                                                         |
 | Matheus Filipe Faria Alves de Andrade	- 14/0155350	 |  Auxílio criação dos agentes / Correção bugs   |  Excelente   |
-| Natanael Fernandes Coelho Filho	- 19/0058650	                 |     |            |
+| Natanael Fernandes Coelho Filho	- 19/0058650	                 |  Auxílio criação dos agentes / auxilio na configuração do ci/cd   |     Excelente       |
 
 ## Outros 
 * Lições Aprendidas:
@@ -114,6 +114,9 @@ TEMPO: +/- 15min
 * Trabalhos Futuros.
    * Adição de mais agentes
    * Possibilidade do usuário jogar contra com os Agentes
+   * Botar um arquivo só de nomes de pessoas e na hora de mostrar os players iriam pegar tipo 6 nomes aleatorios, e também aleatoriamente cada player iria receber um atributo ai a gente colocaria esses agentes
+   * Melhorar a UI.
+
 
 ## Fontes
 - [Regras do jogo](https://pt.wikipedia.org/wiki/Pedra-papel-tesoura-lagarto-Spock)
